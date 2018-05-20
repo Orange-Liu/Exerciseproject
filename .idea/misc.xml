@@ -7,6 +7,7 @@
         <option value="$PROJECT_DIR$/e3-common/pom.xml" />
         <option value="$PROJECT_DIR$/e3-manager/pom.xml" />
         <option value="$PROJECT_DIR$/generatorSqlmapCustom/pom.xml" />
+        <option value="$PROJECT_DIR$/e3-manager-web/pom.xml" />
       </list>
     </option>
   </component>
