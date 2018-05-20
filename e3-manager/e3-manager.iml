@@ -4,6 +4,10 @@
     <output url="file://$MODULE_DIR$/target/classes" />
     <output-test url="file://$MODULE_DIR$/target/test-classes" />
     <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/e3-manager-dao/target" />
+      <excludeFolder url="file://$MODULE_DIR$/e3-manager-interface/target" />
+      <excludeFolder url="file://$MODULE_DIR$/e3-manager-pojo/target" />
+      <excludeFolder url="file://$MODULE_DIR$/e3-manager-service/target" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>
     <orderEntry type="inheritedJdk" />
