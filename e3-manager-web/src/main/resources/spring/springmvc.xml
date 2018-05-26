@@ -11,14 +11,26 @@
 
     <context:component-scan base-package="cn.e3shop.controller" />
     <mvc:annotation-driven />
-    <bean
-            class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <property name="prefix" value="/WEB-INF/jsp/" />
         <property name="suffix" value=".jsp" />
     </bean>
 
+    <!--配置资源路径-->
+    <mvc:resources location="/css/" mapping="/css/**"/>
+    <mvc:resources location="/js/" mapping="/js/**"/>
+
     <!-- 引用dubbo服务 -->
+    <!--指定dubbo服务应用名-->
     <dubbo:application name="e3-manager-web"/>
+
+    <!--指定dubbo注册中心-->
     <dubbo:registry protocol="zookeeper" address="127.0.0.1:2181"/>
+
+    <!--引用服务-->
+    <!--商品服务引用-->
     <dubbo:reference interface="com.e3shop.service.ItemService" id="itemService" />
+    <!--商品分类服务引用-->
+    <dubbo:reference interface="com.e3shop.service.ItemCatService" id="itemCatService" />
+
 </beans>
