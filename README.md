@@ -23,3 +23,9 @@
           |-- e3-manager-interface : service接口模块，打包方式jar
           |-- e3-manager-service : service接口实现类模块，打包方式war
        |-- e3-manager-web : 表现层模块，打包方式war
+       
+2018-06-09日志：
+
+    1、添加FastDFS图片上传服务器（liunx系统）
+    2、编写测试方法测试上传功能
+    3、商品添加页面添加图片上传功能

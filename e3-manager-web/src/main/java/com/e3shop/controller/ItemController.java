@@ -1,4 +1,4 @@
-package cn.e3shop.controller;
+package com.e3shop.controller;
 
 import com.e3shop.model.PageResult;
 import com.e3shop.pojo.TbItem;

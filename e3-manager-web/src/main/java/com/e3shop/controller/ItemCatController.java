@@ -1,4 +1,4 @@
-package cn.e3shop.controller;
+package com.e3shop.controller;
 
 import com.e3shop.model.TreeNode;
 import com.e3shop.service.ItemCatService;
