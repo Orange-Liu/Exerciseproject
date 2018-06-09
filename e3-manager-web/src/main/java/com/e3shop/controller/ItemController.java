@@ -3,10 +3,12 @@ package com.e3shop.controller;
 import com.e3shop.model.PageResult;
 import com.e3shop.pojo.TbItem;
 import com.e3shop.service.ItemService;
+import com.e3shop.utils.E3Result;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 /**
@@ -42,5 +44,17 @@ public class ItemController {
     public PageResult getItemList(Integer page, Integer rows){
         PageResult result = itemService.getItemList(page, rows);
         return result;
+    }
+
+    /**
+     * 添加商品
+     * @param item 商品信息对象
+     * @param desc 商品描述信息
+     * @return
+     */
+    @RequestMapping(value = "/save", method = RequestMethod.POST)
+    @ResponseBody
+    public E3Result addItem(TbItem item, String desc) {
+        return itemService.addItem(item, desc);
     }
 }

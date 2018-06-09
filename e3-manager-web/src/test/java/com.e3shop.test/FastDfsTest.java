@@ -13,7 +13,7 @@ public class FastDfsTest {
     public void testUpload() throws Exception {
         // 创建一个配置文件，文件名任意，内容就是tracker服务器地址
         // 使用全局对象加载配置文件
-        ClientGlobal.init("E:\\idea workspace\\e3shop\\e3-manager-web\\src\\main\\resources\\config\\client.conf");
+        ClientGlobal.init("E:\\idea_workspace\\e3shop\\e3-manager-web\\src\\main\\resources\\config\\client.conf");
         // 创建一个trackerClient对象
         TrackerClient client = new TrackerClient();
         // 通过trackerClient对象获取一个trackerServer对象
@@ -34,7 +34,7 @@ public class FastDfsTest {
 
     @Test
     public void FastDfsUtilTest() throws Exception{
-        FastDFSClient client = new FastDFSClient("E:\\idea workspace\\e3shop\\e3-manager-web\\src\\main\\resources\\config\\client.conf");
+        FastDFSClient client = new FastDFSClient("E:\\idea_workspace\\e3shop\\e3-manager-web\\src\\main\\resources\\config\\client.conf");
         String imgPath = client.uploadFile("E:\\Images\\other\\2.jpg");
         System.out.println(imgPath);
     }

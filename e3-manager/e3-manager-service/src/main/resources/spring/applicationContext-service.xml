@@ -23,8 +23,8 @@
 
     <!-- 声明需要暴露的服务接口 -->
     <!--商品类服务-->
-    <dubbo:service interface="com.e3shop.service.ItemService" ref="itemServiceImpl" timeout="600000"/>
+    <dubbo:service interface="com.e3shop.service.ItemService" ref="itemServiceImpl" timeout="6000" retries="0"/>
     <!--商品分类服务-->
-    <dubbo:service interface="com.e3shop.service.ItemCatService" ref="itemCatServiceImpl" timeout="600000"/>
+    <dubbo:service interface="com.e3shop.service.ItemCatService" ref="itemCatServiceImpl" timeout="6000" retries="0"/>
 
 </beans>
